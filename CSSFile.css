@@ -1,0 +1,88 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+/* Style the gallery container */
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style for each figure (image container) */
+figure {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Style for the images */
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Style for the captions */
+figcaption {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #7f8c8d;
+}
+
+/* Add hover effect to images */
+figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus state when using keyboard */
+figure:focus {
+  outline: 2px solid #3498db;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Transition effect for focus and blur */
+figure:focus,
+figure:blur {
+  transition: all 0.3s ease;
+}
+
+/* Custom background for body */
+body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+/* Add smooth animations */
+figure img {
+  transition: opacity 0.3s ease;
+}
+
+figure:hover img {
+  opacity: 0.8;
+}
